@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="styles/style.css" rel="stylesheet">
+    <title>dz6</title>
+</head>
+<body>
+<main>
+    <form class="form">
+        <div class="pieceOfForm">
+            <label class="item" for="fullName">Повне ім'я</label>
+            <input class="item" id="fullName" required type="text">
+        </div>
+        <div class="pieceOfForm">
+            <label class="item" for="email">Email</label>
+            <input class="item" id="email" required type="email">
+        </div>
+        <div class="pieceOfForm">
+            <label class="item" for="password">Пароль</label>
+            <input class="item" id="password" required type="password">
+        </div>
+        <div class="pieceOfForm">
+            <label class="item" for="passwordRepeat">Пароль ще раз</label>
+            <input class="item" id="passwordRepeat" required type="password">
+        </div>
+        <div class="pieceOfForm">
+            <label class="item" for="maleFemale">Стать</label>
+            <div class="item" id="maleFemale">
+                <input id="male" name="sex" required type="radio" value="male">
+                <label for="male">Чоловіча</label>
+                <input id="female" name="sex" required type="radio" value="female">
+                <label for="female">Жіноча</label>
+            </div>
+        </div>
+        <div class="pieceOfForm">
+            <label class="item" for="age">Вік</label>
+            <input class="item" id="age" required type="number">
+        </div>
+        <div class="pieceOfForm">
+            <label class="item" for="course">Курс</label>
+            <div class="item" id="course">
+                <select id="courses" name="course" required>
+                    <option value="option">-=Виберіть курс=-</option>
+                    <option value="frontEnd">Front-End</option>
+                    <option value="backEnd">Back-End</option>
+                    <option value="projectManagement">Project Management</option>
+                    <option value="qaManual">QA Manual</option>
+                </select>
+            </div>
+        </div>
+        <div class="pieceOfForm">
+            <label class="item" for="address">Повна адреса</label>
+            <textarea class="item" cols="30" id="address" name="address"
+                      placeholder="Країна, регіон, місто/селище, вулиця" required
+                      rows="10"></textarea>
+        </div>
+        <div class="pieceOfForm">
+            <label for="checkbox" id="smallText">
+                <input id="checkbox" type="checkbox" required> Я погоджуюсь продати свою душу
+            </label>
+        </div>
+        <div class="pieceOfForm">
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареєструватися</button>
+        </div>
+    </form>
+</main>
+</body>
+</html>

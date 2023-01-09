@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+main {
+    background-color: blueviolet;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+form {
+    background-color: lavender;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+}
+.pieceOfForm {
+    margin-bottom: 20px;
+}
+.item {
+    display: inline-flex;
+    width: 40%;
+}
+textarea {
+    width: 100px;
+    height: 50px;
+    resize: none;
+}
+#smallText {
+    font-size: 14px;
+}
+.item label {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+button {
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
